@@ -4,6 +4,7 @@ import TopicLinks from "./TopicLinks";
 import NavLink from "./NavLink";
 import SignOutButton from "./SignOutButton";
 import NewTopicButton from "./NewTopicButton";
+import Link from "next/link";
 
 export default async function SideNav() {
   return (
@@ -22,7 +23,7 @@ export default async function SideNav() {
 
 function Logo() {
   return (
-    <a
+    <Link
       className="mb-2 flex h-20 items-end justify-center rounded-md bg-secondary p-4 md:h-40"
       href="/ui"
     >
@@ -31,6 +32,6 @@ function Logo() {
         alt="Acme Logo"
         className="h-14 md:h-full object-contain"
       />
-    </a>
+    </Link>
   );
 }

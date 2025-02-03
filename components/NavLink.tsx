@@ -1,5 +1,6 @@
 import { ListBulletIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
+import Link from "next/link";
 
 type Props = {
   name: string;
@@ -8,7 +9,7 @@ type Props = {
 
 export default function NavLink({ name, href }: Props) {
   return (
-    <a
+    <Link
       key={name}
       href={href}
       className={clsx(
@@ -18,6 +19,6 @@ export default function NavLink({ name, href }: Props) {
     >
       <ListBulletIcon className="w-6" />
       <p className="md:block">{name}</p>
-    </a>
+    </Link>
   );
 }
