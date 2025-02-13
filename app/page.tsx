@@ -67,7 +67,7 @@ export default function Page() {
                 />
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white p-2 rounded"
+                  className="bg-blue-500 text-white p-2 rounded cursor-pointer"
                 >
                   Sign In with Credentials
                 </button>
