@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import placeholder from "@/assets/placeholder.svg";
+import homepage from "../assets/homepage.jpg";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { useState } from "react";
@@ -89,7 +89,7 @@ export default function Page() {
             </div>
           </div>
           <Image
-            src={placeholder}
+            src={homepage}
             alt="Hero"
             className="mx-auto aspect-square overflow-hidden rounded-xl object-cover w-full max-w-[550px]"
           />
