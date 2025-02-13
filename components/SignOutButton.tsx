@@ -1,11 +1,10 @@
-"use client";
-
 import { PowerIcon } from "@heroicons/react/24/outline";
 import { signOut } from "next-auth/react";
 
 export default function SignOutButton() {
   async function handleSignOut() {
-    await signOut({ callbackUrl: "/" });
+    await signOut({ redirect: false });
+    window.location.href = "/";
   }
 
   return (
